@@ -29,35 +29,33 @@
         </figure>
     </header>
     <main>
-        <article>
-            <h2>Our Contact Form</h2>
-            <form action="https://httpbin.org/post" method="POST">
-                <fieldset>
-                    <legend>Send Us A Message</legend>
-                    <p>
-                        <label for="name" id="name">Name:</label>
-                        <input type="text" id="name" name="name" placeholder="your name">
-                    </p>
-                    <p>
-                        <label for="email" id="email">Email:</label>
-                        <input type="text" id="email" email="email" placeholder="your email">
-                    </p>
-                    <p>
-                        <legend>Your Message:</legend>
-                        <label for="message"></label>
-                        <textarea name="message" id="message" placeholder="Type your message here" cols="32"
-                            rows="10"></textarea>
-                    </p>
-                </fieldset>
-                <button type="submit" title="Send">Send</button>
-                <button type="reset" title="Reset">Reset</button>
-            </form>
-            <h2>Our Location</h2>
-            <address>
+        <h2>Our Contact Form</h2>
+        <form action="https://httpbin.org/post" method="POST">
+            <fieldset>
+                <legend>Send Us A Message</legend>
                 <p>
-                    <a href="#top">Back to top</a>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="your name" required>
                 </p>
-        </article>
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" email="email" placeholder="your email" required>
+                </p>
+                <p>
+                    <label for="message">Your Message:</label>
+                    <br>
+                    <textarea name="message" id="message" placeholder="Type your message here" cols="32"
+                        rows="10"></textarea>
+                </p>
+            </fieldset>
+            <button type="submit">Send</button>
+            <button type="reset">Reset</button>
+        </form>
+        <h2>Our Location</h2>
+        <address>
+            <p>
+                <a href="#top">Back to top</a>
+            </p>
     </main>
 
     <hr>
